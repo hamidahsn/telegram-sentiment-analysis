@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #dbeafe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Kotak utama chatbot */
+.chat-container {
+    width: 450px;
+    height: 650px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+    background: #229ED9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-header h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.chat-header p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Area chat */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f5f7fa;
+}
+
+/* Pesan */
+.message {
+    max-width: 80%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Pesan dari chatbot */
+.message.bot {
+    background: #e5e7eb;
+    color: #222;
+    margin-right: auto;
+}
+
+/* Pesan dari user */
+.message.user {
+    background: #229ED9;
+    color: white;
+    margin-left: auto;
+}
+
+/* Bagian input */
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input input:focus {
+    border-color: #229ED9;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #229ED9;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chat-input button:hover {
+    background: #168ac1;
+}
