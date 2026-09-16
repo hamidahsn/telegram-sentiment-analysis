@@ -6,3 +6,4 @@ Sastrawi
 matplotlib
 seaborn
 joblib
+Flask
